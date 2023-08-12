@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Extractor</title>
+    <title>Estrattore Email</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="row pt-3 justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-10">
 
                 <div class="card">
                     <div class="card-header">
@@ -26,7 +26,7 @@
                     <div class="card-body">
                         <div class="col-md-12">
                             <form name="extractor" action="#" method="get">
-                                <table class="" cellpadding="4" cellspacing="0" border="0" width="600" align="center">
+                                <table class="" cellpadding="4" cellspacing="0" border="0" width="100%" align="center">
                                     <tr class="titlebarcolor" valign="middle">
                                         <td align="left" class="titlefont">
                                         </td>
@@ -53,10 +53,10 @@
                                     <tr>
                                         <td valign="top" align="left">
                                             <br />
-                                            <input class="btn btn-success" type="button" value="Extract"
+                                            <input class="btn btn-success" type="button" value="Estrai"
                                                 onclick="findEmail();" />
                                             <input type="reset" class="btn btn-danger"
-                                                value="Reset" />&nbsp;&nbsp;&nbsp;
+                                                value="Resetta" />&nbsp;&nbsp;&nbsp;
                                             <input id="copyButton" type="button"
                                                 onclick="copyToClipboard('#results'), changeClass.call(this)"
                                                 class="btn btn-outline-primary copyButton" value="Copia">
@@ -82,10 +82,10 @@
                                                 <input type="text" name="othersep" size="3"
                                                     onblur="checksep(this.value);" />
                                                 &nbsp;
-                                                <label for="sortbox"><input type="checkbox" name="sort"
+                                                <label for="sortbox"><input type="checkbox" class="me-2 form-checkbox" name="sort"
                                                         id="sortbox" />Ordine alfabetico</label>
                                                 &nbsp;
-                                                <label for="casebox"><input type="checkbox" name="lowcase" id="casebox"
+                                                <label for="casebox"><input type="checkbox"  class="me-2 form-checkbox" name="lowcase" id="casebox"
                                                         checked="checked" />trasforma in minuscolo</label>
                                                 <br /><br />
                                                 Raggruppa: <input type="text" size="3" name="groupby"
